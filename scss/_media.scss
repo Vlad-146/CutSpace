@@ -1,0 +1,24 @@
+.header {
+  @media (max-width: 800px) {
+    height: 80px;
+    flex-direction: column;
+    top: 20px;
+  }
+}
+.nav {
+  @media (max-width: 560px) {
+    padding-top: 40px;
+    ul {
+      flex-direction: column;
+      text-align: center;
+      &::before {
+        content: "menu";
+        text-transform: uppercase;
+        padding-bottom: 30px;
+      }
+      li:not(:last-child) {
+        padding: 0 0 20px 0;
+      }
+    }
+  }
+}
