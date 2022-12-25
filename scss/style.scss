@@ -5,10 +5,9 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
-:root {
-  --text1: #323232;
-  --light: #fdfdfd;
-}
+$text1: #323232;
+$light: #fdfdfd;
+$accent: #f78434;
 body {
   height: 100%;
   background: #fff;
@@ -17,12 +16,31 @@ body {
   // font-family: "Open Sans", sans-serif;
   // font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
   color: #070707;
+}
+
+.button {
+  display: inline-block;
+  height: 58px;
+  padding-left: 37px;
+  padding-right: 37px;
+  border-radius: 29px;
+  font-weight: 700;
+  line-height: 24px;
+  background-color: $accent;
+  color: $light;
+  line-height: 58px;
+  transition: background-color 0.2s ease-in;
+  &:hover {
+    background-color: #ff6a00;
+  }
 }
 
 .wrapper {
   width: 100%;
+  max-width: 1633px;
+  min-width: 320px;
   min-height: 100vh;
   overflow: hidden;
   display: flex;
@@ -38,13 +56,11 @@ body {
 
 .header {
   height: 112px;
-  position: fixed;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%);
+  background: $light;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 50;
 }
 .logo {
   a {
@@ -69,7 +85,75 @@ body {
   a {
     font-size: 16px;
     line-height: 24px;
-    color: var(--text1);
+    color: $text1;
+  }
+}
+
+.titul {
+  margin-top: 114px;
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__text {
+    max-width: 470px;
+    p {
+      line-height: 1.69;
+      letter-spacing: 1.15px;
+    }
+  }
+  &__title {
+    position: relative;
+    z-index: 2;
+    margin-right: -160px;
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 1.46;
+    letter-spacing: 0.8px;
+    padding-bottom: 25px;
+  }
+
+  &__image {
+    img {
+      width: 100%;
+      border-radius: 40px 40px 40px 0px;
+    }
+  }
+}
+.form {
+  margin-top: 42px;
+  height: 58px;
+  background: #ffffff;
+  box-shadow: 0px 17px 42px rgba(0, 0, 0, 0.12);
+  border-radius: 29px;
+  &__label {
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 72px;
+    &::before {
+      position: absolute;
+      top: 20px;
+      left: 28px;
+      content: "";
+      display: block;
+      width: 24px;
+      height: 19px;
+      background-image: url(../img/mail.svg);
+      background-size: initial;
+    }
+  }
+  &__input {
+    flex-grow: 1;
+    margin-right: 5px;
+    &::placeholder {
+      color: #bbb;
+    }
+  }
+  &__button {
   }
 }
 
