@@ -6,7 +6,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
 $text1: #323232;
-$light: #fdfdfd;
+$light: #fff;
 $accent: #f78434;
 body {
   max-width: 1633px;
@@ -18,7 +18,8 @@ body {
   // font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 400;
   font-size: 16px;
-  color: #070707;
+  line-height: 27px;
+  color: $text1;
 }
 
 .button {
@@ -154,8 +155,6 @@ body {
       color: #bbb;
     }
   }
-  &__button {
-  }
 }
 
 .space {
@@ -251,6 +250,136 @@ body {
     font-size: 42px;
     line-height: 62px;
     letter-spacing: 0.8px;
+  }
+}
+
+.start {
+  margin-bottom: 100px;
+  &__row {
+    height: 464px;
+
+    background: #58bebf;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__img {
+    margin: 10vw 2vw 0 -15vw;
+    border: 25px #fff solid;
+    border-radius: 21px;
+    box-shadow: 4px 20px 42px -2px rgba(0, 0, 0, 0.12);
+    img {
+      width: 100%;
+    }
+  }
+  &__text {
+    max-width: 364px;
+    margin-right: 8vw;
+    p {
+      padding-bottom: 30px;
+      letter-spacing: 1.15px;
+      color: #fff;
+    }
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.48;
+    letter-spacing: 0.8px;
+    padding-bottom: 15px;
+    color: #fff;
+  }
+  &__button {
+    display: flex;
+  }
+  &__btn1 {
+    min-width: 172px;
+    margin-right: 20px;
+  }
+  &__btn2 {
+    background-color: $light;
+    min-width: 172px;
+    padding-left: 17px;
+    padding-right: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $text1;
+    img {
+      flex: 1 1 auto;
+      width: 18px;
+      height: 18px;
+    }
+  }
+}
+
+.serve {
+  text-align: center;
+  position: relative;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 39px;
+  &::before {
+    content: "";
+    width: 100%;
+    height: 704px;
+    position: absolute;
+    top: -350px;
+    left: 0;
+    z-index: -1;
+
+    background: #f5f6fa;
+  }
+  &__row-title {
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.48;
+    letter-spacing: 0.8px;
+  }
+  &__cards {
+    padding-top: 45px;
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.cards-serve {
+  &__buy {
+    background: $light;
+    max-width: 540px;
+  }
+  &__image {
+    padding-top: 40px;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 63px;
+    letter-spacing: 0.8px;
+    padding-top: 15px;
+  }
+  p {
+    padding: 1px 88px 25px 88px;
+  }
+  &__ico1 {
+    fill: $accent;
+  }
+  &__ico2 {
+    fill: $accent;
+  }
+  &__btn {
+  }
+  &__sel {
+    background: $light;
+    max-width: 540px;
   }
 }
 

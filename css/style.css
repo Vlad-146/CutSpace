@@ -97,7 +97,8 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 16px;
-  color: #070707;
+  line-height: 27px;
+  color: #323232;
 }
 
 .button {
@@ -109,7 +110,7 @@ body {
   font-weight: 700;
   line-height: 24px;
   background-color: #f78434;
-  color: #fdfdfd;
+  color: #fff;
   line-height: 58px;
   -webkit-transition: background-color 0.2s ease-in;
   -o-transition: background-color 0.2s ease-in;
@@ -142,7 +143,7 @@ body {
 
 .header {
   min-height: 112px;
-  background: #fdfdfd;
+  background: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -272,6 +273,7 @@ body {
 .form__input::placeholder {
   color: #bbb;
 }
+
 .space {
   margin-top: 90px;
   margin-bottom: 150px;
@@ -337,7 +339,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #fdfdfd;
+  background-color: #fff;
   border-radius: 15px;
   bottom: 87px;
   right: -47px;
@@ -378,7 +380,7 @@ body {
   margin-top: 40px;
 }
 .space__button a {
-  color: #fdfdfd;
+  color: #fff;
 }
 .space__desc {
   font-weight: 700;
@@ -390,6 +392,156 @@ body {
   font-size: 42px;
   line-height: 62px;
   letter-spacing: 0.8px;
+}
+
+.start {
+  margin-bottom: 100px;
+}
+.start__row {
+  height: 464px;
+  background: #58bebf;
+  border-radius: 20px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.start__img {
+  margin: 10vw 2vw 0 -15vw;
+  border: 25px #fff solid;
+  border-radius: 21px;
+  -webkit-box-shadow: 4px 20px 42px -2px rgba(0, 0, 0, 0.12);
+          box-shadow: 4px 20px 42px -2px rgba(0, 0, 0, 0.12);
+}
+.start__img img {
+  width: 100%;
+}
+.start__text {
+  max-width: 364px;
+  margin-right: 8vw;
+}
+.start__text p {
+  padding-bottom: 30px;
+  letter-spacing: 1.15px;
+  color: #fff;
+}
+.start__title {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.48;
+  letter-spacing: 0.8px;
+  padding-bottom: 15px;
+  color: #fff;
+}
+.start__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.start__btn1 {
+  min-width: 172px;
+  margin-right: 20px;
+}
+.start__btn2 {
+  background-color: #fff;
+  min-width: 172px;
+  padding-left: 17px;
+  padding-right: 17px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #323232;
+}
+.start__btn2 img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  width: 18px;
+  height: 18px;
+}
+
+.serve {
+  text-align: center;
+  position: relative;
+  margin-bottom: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 39px;
+}
+.serve::before {
+  content: "";
+  width: 100%;
+  height: 704px;
+  position: absolute;
+  top: -350px;
+  left: 0;
+  z-index: -1;
+  background: #f5f6fa;
+}
+.serve__title {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.48;
+  letter-spacing: 0.8px;
+}
+.serve__cards {
+  padding-top: 45px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cards-serve__buy {
+  background: #fff;
+  max-width: 540px;
+}
+.cards-serve__image {
+  padding-top: 40px;
+}
+.cards-serve__title {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 63px;
+  letter-spacing: 0.8px;
+  padding-top: 15px;
+}
+.cards-serve p {
+  padding: 1px 88px 25px 88px;
+}
+.cards-serve__ico1 {
+  fill: #f78434;
+}
+.cards-serve__ico2 {
+  fill: #f78434;
+}
+.cards-serve__sel {
+  background: #fff;
+  max-width: 540px;
 }
 
 @media (max-width: 800px) {
