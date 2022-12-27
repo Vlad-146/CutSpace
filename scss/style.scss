@@ -8,6 +8,7 @@
 $text1: #323232;
 $light: #fff;
 $accent: #f78434;
+$fill: #58bebf;
 body {
   max-width: 1633px;
   height: 100%;
@@ -334,6 +335,7 @@ body {
     background: #f5f6fa;
   }
   &__row-title {
+    padding-bottom: 45px;
   }
   &__title {
     font-weight: 700;
@@ -342,9 +344,9 @@ body {
     letter-spacing: 0.8px;
   }
   &__cards {
-    padding-top: 45px;
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
     justify-content: space-between;
     align-items: center;
@@ -380,6 +382,122 @@ body {
   &__sel {
     background: $light;
     max-width: 540px;
+  }
+}
+
+.why {
+  margin-bottom: 100px;
+  h2 {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 62px;
+    text-align: center;
+    letter-spacing: 0.8px;
+    padding-bottom: 58px;
+  }
+  &__row {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &__card {
+    max-width: 249px;
+    text-align: center;
+    a {
+      display: inline-block;
+
+      border-radius: 50%;
+    }
+    a:hover {
+      background: $accent;
+      .why__ico {
+        fill: $light;
+      }
+    }
+  }
+  &__image {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    background: rgba(88, 190, 191, 0.2);
+    border-radius: 50%;
+  }
+  &__ico {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    fill: $fill;
+  }
+  &__title {
+    padding: 15px 0 2px 0;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 42px;
+    letter-spacing: 0.5px;
+  }
+}
+
+.thanks {
+  margin-bottom: 100px;
+  &__row-title {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+    p {
+      display: inline-block;
+      max-width: 380px;
+    }
+  }
+  &__title {
+    max-width: 452px;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.48;
+    letter-spacing: 0.8px;
+    padding-bottom: 58px;
+  }
+  &__cards {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    p {
+      padding: 31px 29px 23px 29px;
+    }
+  }
+  &__card {
+    max-width: 350px;
+    &:last-child {
+      position: relative;
+      &::after {
+        content: "";
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        background: url(../img/sh3-4.svg) no-repeat;
+        top: -40px;
+        right: -40px;
+        z-index: 10;
+      }
+    }
+  }
+  &__image {
+    img {
+      width: 100%;
+    }
+  }
+
+  &__name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.6px;
+    padding: 0 29px;
+  }
+  &__city {
+    padding: 0 29px;
   }
 }
 
