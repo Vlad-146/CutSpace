@@ -25,12 +25,13 @@ body {
 
 .button {
   display: inline-block;
+  max-width: 157px;
   height: 58px;
   padding-left: 37px;
   padding-right: 37px;
   border-radius: 29px;
   font-weight: 700;
-  line-height: 24px;
+  font-size: 16px;
   background-color: $accent;
   color: $light;
   line-height: 58px;
@@ -150,8 +151,9 @@ body {
     }
   }
   &__input {
-    flex-grow: 1;
+    flex: 1 1 auto;
     margin-right: 5px;
+
     &::placeholder {
       color: #bbb;
     }
@@ -521,9 +523,7 @@ body {
   background: url(../img/Mask.svg) no-repeat;
   background-size: cover;
   margin-bottom: 100px;
-  &::after {
-    content: "";
-  }
+
   &__block {
     position: relative;
     &::after {
@@ -547,7 +547,7 @@ body {
     gap: 120px;
     align-items: center;
   }
-  &__iext {
+  &__text {
     padding-top: 156px;
     max-width: 359px;
     p {

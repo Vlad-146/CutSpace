@@ -10,6 +10,8 @@
     margin-top: 30px;
     &__row {
       flex-direction: column;
+      justify-content: unset;
+      align-items: unset;
     }
     &__title {
       position: unset;
@@ -47,12 +49,156 @@
       }
     }
   }
+  .titul {
+    max-width: 320px;
+  }
+  .titul__title {
+    font-size: 18px;
+  }
+  .titul__image {
+    margin-top: 45px;
+  }
+  .form__label {
+    flex-direction: column;
+  }
+  .form__input {
+    margin-bottom: 50px;
+  }
+
+  .button {
+    height: 48px;
+    padding-left: 27px;
+    padding-right: 27px;
+    border-radius: 29px;
+    font-size: 14px;
+    line-height: 48px;
+  }
   .space {
+    margin-top: 40px;
+    &__row-company {
+      margin-bottom: 40px;
+    }
     &__images {
       margin-left: unset;
     }
     &__img {
       flex-direction: column;
+    }
+    &__title {
+      padding-top: 30px;
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+  .start {
+    margin-bottom: 40px;
+    &__row {
+      flex-direction: column;
+      height: unset;
+      justify-content: unset;
+      align-items: unset;
+    }
+    &__img {
+      margin: 10px;
+      border: 5px $light solid;
+    }
+    &__text {
+      margin: 10px;
+    }
+    &__title {
+      font-size: 20px;
+    }
+    &__button {
+      flex-direction: column;
+      margin-bottom: 10px;
+    }
+    &__btn1 {
+      margin-bottom: 15px;
+    }
+  }
+  .serve {
+    margin-bottom: 40px;
+    &__title {
+      font-size: 20px;
+    }
+  }
+  .cards-serve__title {
+    font-size: 24px;
+  }
+  .why {
+    margin-bottom: 40px;
+    h2 {
+      font-size: 24px;
+    }
+    &__title {
+      font-size: 20px;
+    }
+  }
+  .thanks {
+    margin-bottom: 40px;
+    &__row-title {
+      flex-direction: column;
+      justify-content: unset;
+      align-items: unset;
+      gap: unset;
+      p {
+        padding-bottom: 15px;
+      }
+    }
+    &__title {
+      font-size: 24px;
+      padding-bottom: 15px;
+    }
+    &__cards {
+      flex-direction: column;
+      row-gap: 20px;
+      justify-content: unset;
+      align-items: unset;
+      p {
+        padding: 10px 15px 10px 15px;
+      }
+    }
+  }
+  .contact {
+    margin-top: 0;
+    &__titul {
+      font-size: 24px;
+      line-height: 32px;
+    }
+    &__block {
+      flex-direction: column-reverse;
+      justify-content: unset;
+      row-gap: 30px;
+      align-items: unset;
+      &::after {
+        content: "";
+        width: 350px;
+        height: 350px;
+        top: 130px;
+        right: 0;
+        left: 0;
+      }
+    }
+    &__text {
+      padding-top: 20px;
+      max-width: 320px;
+    }
+    &__btn {
+      margin-bottom: 20px;
+    }
+  }
+  .footer {
+    flex-direction: column;
+    justify-content: unset;
+    align-items: unset;
+    &__about {
+      padding-bottom: 20px;
+    }
+    &__link {
+      flex-direction: column;
+      justify-content: unset;
+      align-items: unset;
+      row-gap: 20px;
     }
   }
 }
