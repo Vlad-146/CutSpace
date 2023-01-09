@@ -103,10 +103,10 @@ body {
 
 .button {
   display: inline-block;
-  max-width: 157px;
+  max-width: 160px;
   height: 58px;
-  padding-left: 37px;
-  padding-right: 37px;
+  padding-left: 32px;
+  padding-right: 32px;
   border-radius: 29px;
   font-weight: 700;
   font-size: 16px;
@@ -444,6 +444,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  cursor: pointer;
 }
 .start__btn1 {
   min-width: 172px;
@@ -748,6 +749,7 @@ body {
 .contact__btn {
   background-color: #fff;
   color: #323232;
+  cursor: pointer;
 }
 .contact__image {
   position: relative;
@@ -807,6 +809,7 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  z-index: 99;
 }
 .footer__column {
   max-width: 148px;
